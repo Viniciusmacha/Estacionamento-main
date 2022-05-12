@@ -118,14 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Placa-Mercosul-Foto-Reprodução" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Placa-Mercosul-Foto-Reprodução.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="302-3026464_png-file-svg-login-member-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\302-3026464_png-file-svg-login-member-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="model_main_comprar-lt-1-0-pacote-r8d_cf7fbf644f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\model_main_comprar-lt-1-0-pacote-r8d_cf7fbf644f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Telephone-PNG-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Telephone-PNG-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="74472" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\74472.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="42c71534a69e7489e0b7eb4062e458eb-vista-frontal-do-carro-inteligente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\42c71534a69e7489e0b7eb4062e458eb-vista-frontal-do-carro-inteligente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +145,7 @@
   <data name="2_17_131008045928_adesivo-de-geladeira-logo-de-cerveja-com-seu-nome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2_17_131008045928_adesivo-de-geladeira-logo-de-cerveja-com-seu-nome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="302-3026464_png-file-svg-login-member-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\302-3026464_png-file-svg-login-member-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circulo-cromatico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circulo-cromatico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

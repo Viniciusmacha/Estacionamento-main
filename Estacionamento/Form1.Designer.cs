@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Cadastrar = new System.Windows.Forms.Button();
             this.Entrada = new System.Windows.Forms.Button();
             this.Saida = new System.Windows.Forms.Button();
@@ -111,8 +112,9 @@
             this.Controls.Add(this.Saida);
             this.Controls.Add(this.Entrada);
             this.Controls.Add(this.Cadastrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "início";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

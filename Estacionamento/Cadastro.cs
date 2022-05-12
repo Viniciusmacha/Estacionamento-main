@@ -26,13 +26,13 @@ namespace Estacionamento
         public string msg;
         public int contador = 0;
         //Contrutor
-        public Cadastro(string Livraria)
+        public Cadastro(string Estacionamento)
         {          
-            conexao = new MySqlConnection("server=localhost;DataBase=" + Livraria + ";Uid=root;Password=;");
+            conexao = new MySqlConnection("server=localhost;DataBase=" + Estacionamento + ";Uid=root;Password=;");
             try
             {
                 conexao.Open();//Solicitando a entrada ao banco de dados
-                Console.WriteLine("Entrei!!!");
+                Console.WriteLine("Seja Bem Vindo ao Estacionamento Senac!!!");
             }
             catch (Exception e)
             {
@@ -47,7 +47,7 @@ namespace Estacionamento
             try
             {
                 dados = "('" + cpf + "','" + nome + "','" + telefone + "')";
-                resultado = "Insert into Cliente(cpf, nome, telefone, ) values" + dados;
+                resultado = "Insert into Cliente(cpf, nome, telefone) values" + dados;
                 //Executar o comando resultado no banco de dados
                 MySqlCommand sql = new MySqlCommand(resultado, conexao);
                 resultado = "" + sql.ExecuteNonQuery();
@@ -62,7 +62,7 @@ namespace Estacionamento
 
         public void PreencherVetor()
         {
-            string query = "select * from cliente";//Coletando o dado do BD
+            string query = "select * from Cliente";//Coletando o dado do BD
 
             //Instanciando os vetores
             cpf = new long[100];

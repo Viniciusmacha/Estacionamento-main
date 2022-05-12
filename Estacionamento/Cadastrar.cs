@@ -5,12 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;//Imports para conexão com o banco de dados
 using MySql.Data.MySqlClient;//Imports para realizar comandos no banco
-using System.Windows.Forms;
-
 
 namespace Estacionamento
 {
-    class Cadastro
+    class Cadastrar
     {
         MySqlConnection conexao;
 
@@ -25,13 +23,13 @@ namespace Estacionamento
         public string msg;
         public int contador = 0;
         //Contrutor
-        public Cadastro(string Livraria)
+        public Cadastrar(string Estacionamento)
         {
-            conexao = new MySqlConnection("server=localhost;DataBase=" + Livraria + ";Uid=root;Password=;");
+            conexao = new MySqlConnection("server=localhost;DataBase=" + Estacionamento + ";Uid=root;Password=;");
             try
             {
                 conexao.Open();//Solicitando a entrada ao banco de dados
-                MessageBox.Show("Entrei!!!");
+                
             }
             catch (Exception e)
             {
@@ -46,11 +44,11 @@ namespace Estacionamento
             try
             {
                 dados = "('" + cpf + "','" + nome + "','" + telefone + "')";
-                resultado = "Insert into funcionario(cpf, nome, telefone, ) values" + dados;
+                resultado = "Insert into Cliente(cpf, nome, telefone) values" + dados;
                 //Executar o comando resultado no banco de dados
                 MySqlCommand sql = new MySqlCommand(resultado, conexao);
                 resultado = "" + sql.ExecuteNonQuery();
-                MessageBox.Show(resultado + " Linha(s) Afetada(s)!");
+                Console.WriteLine(resultado + " Linha(s) Afetada(s)!");//temos que fazer um mensagem pop-up para mostrar que os dados foram salvos com sucesso!
 
             }
             catch (Exception e)
@@ -61,7 +59,7 @@ namespace Estacionamento
 
         public void PreencherVetor()
         {
-            string query = "select * from cliente";//Coletando o dado do BD
+            string query = "select * from Cliente";//Coletando o dado do BD
 
             //Instanciando os vetores
             cpf = new long[100];
@@ -85,7 +83,7 @@ namespace Estacionamento
             i = 0;
             while (leitura.Read())
             {
-                cpf[i] = Convert.ToInt32(leitura["cpf"] + "");
+                cpf[i] = Convert.ToInt64(leitura["cpf"] + "");
                 nome[i] = leitura["nome"] + "";
                 telefone[i] = leitura["telefone"] + "";
 

@@ -13,13 +13,12 @@ namespace Estacionamento
    
     public partial class Form1 : Form
     {
+        Form2 form;
         
-        Form2 usua;
         public Form1()
 
         {
-            
-            usua = new Form2();
+            form = new Form2();
             InitializeComponent();
 
         }
@@ -27,19 +26,28 @@ namespace Estacionamento
         private void Cadastrar_Click(object sender, EventArgs e)
         {
             Visible = true;
-            usua.ShowDialog();
+            form.ShowDialog(); //"" +Seja Bem Vindo ao Estacionamento Senac!!!
             Visible = false;
           
 
-        }//Fim do método Cadastrar, devemos conectar com a base de dados dentro do texBox1.Text
+        }//Conexão com o formulario 2
 
         private void Entrada_Click(object sender, EventArgs e)
         {
-           
+            Visible = true;
+            Model.ShowDialog();
+            MessageBox.Show(Convert.ToString(DateTime.Now));
+
+            Visible = false;
+
+
         }
 
         private void Saida_Click(object sender, EventArgs e)
         {
+            Visible = true;
+            MessageBox.Show(Convert.ToString(DateTime.Now));
+            Visible = false;
 
         }
     }

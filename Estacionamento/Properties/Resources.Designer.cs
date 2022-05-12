@@ -113,9 +113,39 @@ namespace Estacionamento.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circulo_cromatico {
+            get {
+                object obj = ResourceManager.GetObject("circulo-cromatico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_2 {
             get {
                 object obj = ResourceManager.GetObject("logo-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap model_main_comprar_lt_1_0_pacote_r8d_cf7fbf644f {
+            get {
+                object obj = ResourceManager.GetObject("model_main_comprar-lt-1-0-pacote-r8d_cf7fbf644f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Placa_Mercosul_Foto_Reprodução {
+            get {
+                object obj = ResourceManager.GetObject("Placa-Mercosul-Foto-Reprodução", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

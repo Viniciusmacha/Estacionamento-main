@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dao.cs" />
+    <Compile Include="Auto.cs" />
+    <Compile Include="Cadastrar.cs" />
+    <Compile Include="Date.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +140,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\302-3026464_png-file-svg-login-member-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Placa-Mercosul-Foto-Reprodução.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\model_main_comprar-lt-1-0-pacote-r8d_cf7fbf644f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo-cromatico.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
