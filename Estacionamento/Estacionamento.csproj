@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\Videos\Trabalho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\Videos\Trabalho.Designer.cs">
+      <DependentUpon>Trabalho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Auto.cs" />
     <Compile Include="Cadastrar.cs" />
     <Compile Include="Date.cs" />
@@ -76,12 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Veiculo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Veiculo.Designer.cs">
-      <DependentUpon>Veiculo.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="..\..\..\..\Videos\Trabalho.resx">
+      <DependentUpon>Trabalho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,9 +107,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Veiculo.resx">
-      <DependentUpon>Veiculo.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
